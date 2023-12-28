@@ -1,23 +1,6 @@
 {
-  "builds": [
-    {
-      "src": "/createdb.ts",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*).png",
-      "continue": true
-    },
-    {
-      "src": "/createdb.ts",
-      "dest": "/createdb.ts"
-    },
-    {
-      "src": "/(.*)",
-      "status": 404,
-      "dest": "/404.html"
-    }
+  "rewrites": [
+    { "source": "/(.*).png", "destination": "/api/index" },
+    { "source": "/createdb", "destination": "/api/createdb" }
   ]
 }
