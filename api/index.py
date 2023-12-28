@@ -3,7 +3,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-@app.route('/<path:path>.png')
+@app.route('/<path>.png')
 
 def track():
     # Capture the requester's IP and the current time
