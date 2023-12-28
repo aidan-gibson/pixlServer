@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # @app.route('/<path:path>.png')
 @app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
+# @app.route('/<path:path>')
 
 def track(path):
     # Capture the requester's IP and the current time
