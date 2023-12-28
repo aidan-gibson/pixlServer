@@ -1,7 +1,5 @@
 {
   "rewrites": [
-    { "source": "/(.*).png", "destination": "/api/index" },
-    { "source": "/createdb", "destination": "/api/createdb" },
-    { "source": "/add", "destination": "/api/add-pets" }
+    { "source": "/(.*)", "destination": "/api/index" }
   ]
 }
