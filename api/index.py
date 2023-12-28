@@ -4,7 +4,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 # accepts ANY path, ie test, test.png, bleh/test.png
-@app.route('/<path:path>')
+@app.route('/<path:path>.png')
 
 def track(path):
     # Capture the requester's IP and the current time
