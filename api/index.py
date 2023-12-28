@@ -31,7 +31,7 @@ def track(path):
 
     # p = influxdb_client.Point("q").tag("IP", requester_ip).tag("epoch", access_time).field("path", path)
     # p = influxdb_client.Point("q").tag("IP", requester_ip).field("epoch", access_time).field("path", path)
-    p = influxdb_client.Point("q").tag("IP", requester_ip).time(access_time).field("path", path)
+    p = influxdb_client.Point("pixl").tag("IP", requester_ip).time(access_time).field("path", path)
 
     write_api.write(bucket=bucket, org=org, record=p)
 
