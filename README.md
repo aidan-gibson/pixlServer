@@ -28,6 +28,11 @@ extension needs to be informed
 influxdb
 need higher tier plan so no data loss after 30 days
 
+* Storing:
+  * path
+  * IP
+  * realtime
+
 # notes
 vercel uses python3.9
 # todo
