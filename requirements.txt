@@ -1,2 +1,2 @@
 Flask==3.0.0
-influxdb3-python==0.3.4
+influxdb_client
