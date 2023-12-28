@@ -29,7 +29,9 @@ extension needs to be informed
   * https://vercel.com/docs/storage/vercel-postgres/limits
   * https://vercel.com/docs/storage/vercel-postgres/quickstart
   * 256mb (-32mb) cap
-
+* mongo free m0
+  * storage 512MB
+  * allow access from anywhere (could limit this to vercel IPs later)
 # notes
 vercel uses python3.9
 # todo
