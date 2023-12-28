@@ -25,13 +25,9 @@ when opened send notif (i dont care but other ppl do)
 extension needs to be informed 
 # db
 
-* vercel postgres 
-  * https://vercel.com/docs/storage/vercel-postgres/limits
-  * https://vercel.com/docs/storage/vercel-postgres/quickstart
-  * 256mb (-32mb) cap
-* mongo free m0
-  * storage 512MB
-  * allow access from anywhere (could limit this to vercel IPs later)
+influxdb
+need higher tier plan so no data loss after 30 days
+
 # notes
 vercel uses python3.9
 # todo
