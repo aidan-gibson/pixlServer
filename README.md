@@ -23,8 +23,15 @@ git
 when opened send notif (i dont care but other ppl do)
 
 extension needs to be informed 
+# db
+
+* vercel postgres 
+  * https://vercel.com/docs/storage/vercel-postgres/limits
+  * https://vercel.com/docs/storage/vercel-postgres/quickstart
+  * 256mb cap
 
 # notes
 vercel uses python3.9
 # todo
 vercel one click deploy
+couldn't someone overflow database by spamming 

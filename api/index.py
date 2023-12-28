@@ -3,9 +3,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-# @app.route('/<path:path>.png')
-
-# @app.route('/', defaults={'path': ''})
+# accepts ANY path, ie test, test.png, bleh/test.png
 @app.route('/<path:path>')
 
 def track(path):
@@ -15,4 +13,5 @@ def track(path):
 
     print(f"Path: {path} IP: {requester_ip} Time: {access_time}")
     # Log the IP and time TODO later send this to database. sqlite would be fine but i want practice w influxdb. this could be separate server or use influxdb http api for sep server. have failsafe if the server is down.
+
     return send_file("boo.png", mimetype="image/png")
