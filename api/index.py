@@ -3,10 +3,9 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-@app.route('/')
-# def home():
-#     return 'Hello, World!'
-def track():  # put application's code here
+@app.route('/<path:path>.png')
+
+def track():
     # Capture the requester's IP and the current time
     requester_ip = request.remote_addr
     access_time = datetime.now()
