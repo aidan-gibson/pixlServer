@@ -29,7 +29,7 @@ def track(path):
     print(f"Path: {path} IP: {requester_ip} Time: {access_time}")
     # Log the IP and time TODO later send this to database. sqlite would be fine but i want practice w influxdb. this could be separate server or use influxdb http api for sep server. have failsafe if the server is down.
 
-    p = influxdb_client.Point("q").tag("IP", requester_ip).tag("realtime", access_time).field("path", path)
+    p = influxdb_client.Point("q").tag("IP", requester_ip).tag("epoch", access_time).field("path", path)
     write_api.write(bucket=bucket, org=org, record=p)
 
     return send_file("boo.png", mimetype="image/png")
