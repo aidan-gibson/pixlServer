@@ -24,7 +24,7 @@ app = Flask(__name__)
 def track(path):
     # Capture the requester's IP and the current time
     requester_ip = request.remote_addr
-    access_time = datetime.now()
+    access_time = time.time()
 
     print(f"Path: {path} IP: {requester_ip} Time: {access_time}")
     # Log the IP and time TODO later send this to database. sqlite would be fine but i want practice w influxdb. this could be separate server or use influxdb http api for sep server. have failsafe if the server is down.
