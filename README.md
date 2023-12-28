@@ -28,7 +28,7 @@ extension needs to be informed
 * vercel postgres 
   * https://vercel.com/docs/storage/vercel-postgres/limits
   * https://vercel.com/docs/storage/vercel-postgres/quickstart
-  * 256mb cap
+  * 256mb (-32mb) cap
 
 # notes
 vercel uses python3.9
