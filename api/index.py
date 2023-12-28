@@ -3,7 +3,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-# accepts ANY path, ie test, test.png, bleh/test.png
+# accepts ANY path ending in .png, ie test.png, bleh/test.png
 @app.route('/<path:path>.png')
 
 def track(path):
