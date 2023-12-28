@@ -18,8 +18,13 @@ make sure im not vuln to database crashing if someone submits a url with 1 billi
 
 https
 
-
+git 
 
 when opened send notif (i dont care but other ppl do)
 
 extension needs to be informed 
+
+# notes
+vercel uses python3.9
+# todo
+vercel one click deploy
